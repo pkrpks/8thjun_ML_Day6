@@ -1,0 +1,77 @@
+
+*********************************************************************************************************************************
+
+>>> 5**9
+1953125
+>>> 3//2
+1
+>>> 7//3
+2
+>>> 6 == 6
+True
+>>> a=20;a+=30;print(a)
+50
+>>> True * True
+1
+>>> True & False
+False
+>>> ((6>3) and (7<4) or (18==3)) and (9>3)
+False
+>>> True is True
+True
+>>> False in 'False'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'in <string>' requires string as left operand, not bool
+
+>>> ((True == False) or (False > True)) and (False <= True)
+False
+********************************************************************
+>>> s1 = "Nice to have it"
+>>> s2 = "here"
+>>> print(s1 +" "+ s2)
+Nice to have it here
+********************************************************************
+>>> a=[1,2,[3,4],[5,[100,200,['hello']],23,11],1,7]
+>>> a
+[1, 2, [3, 4], [5, [100, 200, ['hello']], 23, 11], 1, 7]
+>>> a[-3][-3][-1]
+['hello']
+
+********************************************************************
+>>> s1 = "Nice to have it"; s2 = "here"
+>>> a = [1,2,[3,4],[5,[100,200,['hello']],23,11],1,7]
+>>> a.append(0,s2)
+>>> a.insert(0,s1)
+>>> a
+['Nice to have it', 1, 2, [3, 4], [5, [100, 200, ['hello']], 23, 11], 1, 7, 0, 'here']
+>>> 
+*********************************************************************
+>>> color_list_2 =  set(["Red","Green"])
+>>> color_list_1  -  color_list_2
+{'white', 'Black'}
+
+*********************************************************************
+>>> I = int(input("Enter the Value Of n : "))
+Enter the Value Of n : 5
+>>> V = '{0}+{0}{0}+{0}{0}{0}'.format(I)
+>>> V
+'5+55+555'
+>>> eval(V)
+615
+
+*********************************************************************
+Input comma separated sequence of wordswithout,hello,bag,world
+>>> words =  set(items.split(","))
+>>>
+>>> print(sorted(words))
+['bag', 'hello', 'without', 'world']    
+
+*********************************************************************
+
+>>> d = {'Student': ['Rahul', 'Kishore', 'Vidhya', 'Raakhi'],'Marks': [57,87,67,79]}
+>>> max(d['Marks'])
+87
+>>> 
+>>> print(d['Student'][d['Marks'].index(max(d['Marks']))])
+Kishore                                                                                                                                                                                                                
